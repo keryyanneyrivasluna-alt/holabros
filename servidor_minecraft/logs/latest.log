@@ -1,0 +1,242 @@
+[17Jun2026 15:53:35.327] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.7, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[17Jun2026 15:53:35.333] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Ubuntu; OS Linux arch amd64 version 6.8.0-1052-azure
+[17Jun2026 15:53:38.309] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[17Jun2026 15:53:38.401] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/holabros/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[17Jun2026 15:53:39.055] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/holabros/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.7/fmlcore-1.20.1-47.3.7.jar is missing mods.toml file
+[17Jun2026 15:53:39.057] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/holabros/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.7/javafmllanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[17Jun2026 15:53:39.059] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/holabros/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.7/lowcodelanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[17Jun2026 15:53:39.065] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/holabros/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.7/mclanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[17Jun2026 15:53:39.662] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: curios. Using Mod File: /workspaces/holabros/servidor_minecraft/mods/curios-forge-5.14.1+1.20.1.jar
+[17Jun2026 15:53:39.663] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 14 dependencies adding them to mods collection
+[17Jun2026 15:53:46.788] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[17Jun2026 15:53:46.885] [main/ERROR] [mixin/]: Mixin config fabric-data-attachment-api-v1.mixins.json does not specify "minVersion" property
+[17Jun2026 15:53:46.889] [main/ERROR] [mixin/]: Mixin config fabric-data-attachment-api-v1.client.mixins.json does not specify "minVersion" property
+[17Jun2026 15:53:47.130] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[17Jun2026 15:53:47.700] [main/WARN] [mixin/]: Reference map 'CerbonsAPI-Forge-1.20.1-forge-refmap.json' for cerbons_api.mixins.json could not be read. If this is a development environment you can ignore this message
+[17Jun2026 15:53:47.775] [main/WARN] [mixin/]: Reference map 'nitrogen_internals.refmap.json' for nitrogen_internals.mixins.json could not be read. If this is a development environment you can ignore this message
+[17Jun2026 15:53:51.153] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/player/KeyboardInput (java.lang.ClassNotFoundException: net.minecraft.client.player.KeyboardInput)
+[17Jun2026 15:53:51.157] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.player.KeyboardInput was not found fdlib.mixins.json:KeyboardInputMixin
+[17Jun2026 15:53:51.635] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/renderer/LevelRenderer for invalid dist DEDICATED_SERVER
+[17Jun2026 15:53:51.639] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/renderer/LevelRenderer (java.lang.RuntimeException: Attempted to load class net/minecraft/client/renderer/LevelRenderer for invalid dist DEDICATED_SERVER)
+[17Jun2026 15:53:51.639] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.renderer.LevelRenderer was not found accessories-common.mixins.json:LevelRendererAccessor
+[17Jun2026 15:53:52.155] [main/ERROR] [mixin/]: accessories-common.mixins.json:ContainerMixin: Interface mixin contains a non-public method! Found extendHasAnyMatching(Ljava/util/function/Predicate;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V in accessories-common.mixins.json:ContainerMixin
+org.spongepowered.asm.mixin.transformer.throwables.InvalidInterfaceMixinException: Interface mixin contains a non-public method! Found extendHasAnyMatching(Ljava/util/function/Predicate;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V in accessories-common.mixins.json:ContainerMixin
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorInterface.prepareMethod(MixinPreProcessorInterface.java:65) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.prepare(MixinPreProcessorStandard.java:187) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo$State.validate(MixinInfo.java:322) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.validate(MixinInfo.java:913) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinConfig.postInitialise(MixinConfig.java:801) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.prepareConfigs(MixinProcessor.java:567) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.select(MixinProcessor.java:462) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.checkSelect(MixinProcessor.java:438) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:290) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar%2355!/:10.0.9+10.0.9+main.dcd20f30]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:637) ~[?:?]
+	at java.lang.Class.forName(Class.java:547) ~[?:?]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler$DummyProvider.lambda$updateModuleReads$1(ImmediateWindowHandler.java:145) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:1.0]
+	at java.util.Optional.map(Optional.java:260) ~[?:?]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler$DummyProvider.updateModuleReads(ImmediateWindowHandler.java:145) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:1.0]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler.acceptGameLayer(ImmediateWindowHandler.java:71) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:1.0]
+	at net.minecraftforge.fml.loading.FMLLoader.beforeStart(FMLLoader.java:207) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:1.0]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.launchService(CommonLaunchHandler.java:92) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[17Jun2026 15:53:52.251] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[17Jun2026 15:54:06.056] [main/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=2 on accessories-common.mixins.json:NbtCompoundMixin::handler$zkc000$adjustCheckForListVariants exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[17Jun2026 15:54:10.152] [main/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
+
+[17Jun2026 15:54:11.756] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Registering common data for channel xaerolib:main!
+[17Jun2026 15:54:11.800] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading primary common config for channel xaerolib:main!
+[17Jun2026 15:54:11.821] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading server config profiles for channel xaerolib:main!
+[17Jun2026 15:54:11.916] [modloading-worker-0/INFO] [com.jtorleonstudios.libraryferret.LibraryFerret/]: Initialize mod Library Ferret
+[17Jun2026 15:54:11.958] [modloading-worker-0/INFO] [com.jtorleonstudios.libraryferret.LibraryFerret/]: Initialized mod Library Ferret
+[17Jun2026 15:54:11.987] [modloading-worker-0/INFO] [dynamiclights/]: [Dynamic Lights] Registering server started event ...
+[17Jun2026 15:54:12.474] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Registering common data for channel xaeroworldmap:main!
+[17Jun2026 15:54:12.515] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading primary common config for channel xaeroworldmap:main!
+[17Jun2026 15:54:12.525] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading server config profiles for channel xaeroworldmap:main!
+[17Jun2026 15:54:14.003] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.7, for MC 1.20.1 with MCP 20230612.114412
+[17Jun2026 15:54:14.003] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.7 Initialized
+[17Jun2026 15:54:20.243] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Registering common data for channel xaerominimap:main!
+[17Jun2026 15:54:20.341] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading primary common config for channel xaerominimap:main!
+[17Jun2026 15:54:20.348] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading server config profiles for channel xaerominimap:main!
+[17Jun2026 15:54:20.387] [modloading-worker-0/INFO] [com.aetherteam.cumulus.Cumulus/]: Disabling Cumulus as it is on server.
+[17Jun2026 15:54:29.571] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
+[17Jun2026 15:54:30.046] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib common 1/2!
+[17Jun2026 15:54:30.092] [modloading-worker-0/INFO] [dynamiclights/]: [Dynamic Lights] Loaded Dynamic Lights by Tschipcraft successfully!
+[17Jun2026 15:54:30.560] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[17Jun2026 15:54:30.561] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[17Jun2026 15:54:30.562] [modloading-worker-0/INFO] [terrablender/]: Registered region regions_unexplored:primary to index 1 for type OVERWORLD
+[17Jun2026 15:54:30.566] [modloading-worker-0/INFO] [terrablender/]: Registered region regions_unexplored:secondary to index 2 for type OVERWORLD
+[17Jun2026 15:54:30.566] [modloading-worker-0/INFO] [terrablender/]: Registered region regions_unexplored:nether to index 1 for type NETHER
+[17Jun2026 15:54:31.387] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_dungeons_andtavernspillageroutpostrework] Starting version check at https://api.modrinth.com/updates/QIt10I7z/forge_updates.json
+[17Jun2026 15:54:32.229] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_primary to index 3 for type OVERWORLD
+[17Jun2026 15:54:32.230] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_secondary to index 4 for type OVERWORLD
+[17Jun2026 15:54:32.231] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_rare to index 5 for type OVERWORLD
+[17Jun2026 15:54:32.232] [main/INFO] [terrablender/]: Registered region biomesoplenty:nether_common to index 2 for type NETHER
+[17Jun2026 15:54:32.232] [main/INFO] [terrablender/]: Registered region biomesoplenty:nether_rare to index 3 for type NETHER
+[17Jun2026 15:54:32.244] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading FD animations...
+[17Jun2026 15:54:32.246] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_idle
+[17Jun2026 15:54:32.293] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_dungeons_andtavernspillageroutpostrework] Found status: OUTDATED Current: 1.1 Target: 1.1+mod
+[17Jun2026 15:54:32.294] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aether] Starting version check at https://github.com/The-Aether-Team/The-Aether/raw/1.20.1-develop/update.json
+[17Jun2026 15:54:32.323] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_boom_attack
+[17Jun2026 15:54:32.332] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_attack
+[17Jun2026 15:54:32.351] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_roll_up
+[17Jun2026 15:54:32.367] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_roll_up_end
+[17Jun2026 15:54:32.382] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_second_phase_prepare
+[17Jun2026 15:54:32.398] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_second_phase_strike_walls
+[17Jun2026 15:54:32.416] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_roll_up_just_end
+[17Jun2026 15:54:32.434] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_roll
+[17Jun2026 15:54:32.458] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_roll_roll
+[17Jun2026 15:54:32.495] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_cast
+[17Jun2026 15:54:32.525] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aether] Found status: UP_TO_DATE Current: 1.20.1-1.5.2-neoforge Target: null
+[17Jun2026 15:54:32.525] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [dynamiclights] Starting version check at https://api.modrinth.com/updates/7YjclEGc/forge_updates.json?forge=only
+[17Jun2026 15:54:32.526] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_earthquake_cast
+[17Jun2026 15:54:32.548] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_rockfall_cast
+[17Jun2026 15:54:32.568] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:electric_orb_idle
+[17Jun2026 15:54:32.572] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_crystal_spawn
+[17Jun2026 15:54:32.585] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_monolith_idle
+[17Jun2026 15:54:32.589] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_monolith_turn_off
+[17Jun2026 15:54:32.593] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [dynamiclights] Found status: UP_TO_DATE Current: 1.9+mod Target: null
+[17Jun2026 15:54:32.594] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_dungeons_andtavernsancientcityoverhaul] Starting version check at https://api.modrinth.com/updates/DNuNq5bb/forge_updates.json
+[17Jun2026 15:54:32.593] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:kinetic_field_spawn
+[17Jun2026 15:54:32.595] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_appear
+[17Jun2026 15:54:32.607] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_screen_appear
+[17Jun2026 15:54:32.619] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_death
+[17Jun2026 15:54:32.644] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:ray_reflector_activate
+[17Jun2026 15:54:32.648] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:test_malkuth
+[17Jun2026 15:54:32.665] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_idle
+[17Jun2026 15:54:32.681] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_slash_fire
+[17Jun2026 15:54:32.688] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_dungeons_andtavernsancientcityoverhaul] Found status: OUTDATED Current: 1 Target: 1+mod
+[17Jun2026 15:54:32.688] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_dungeons_andtavernsswamphutrework] Starting version check at https://api.modrinth.com/updates/nWSeFpQt/forge_updates.json
+[17Jun2026 15:54:32.714] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_slash_ice
+[17Jun2026 15:54:32.729] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_forward_prepare
+[17Jun2026 15:54:32.746] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_crush_attack_start
+[17Jun2026 15:54:32.763] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_crush_attack_midair
+[17Jun2026 15:54:32.778] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_crush_attack_end
+[17Jun2026 15:54:32.793] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_dungeons_andtavernsswamphutrework] Found status: OUTDATED Current: 1 Target: 1+mod
+[17Jun2026 15:54:32.794] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[17Jun2026 15:54:32.807] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_pull_and_punch
+[17Jun2026 15:54:32.841] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_screen_appear
+[17Jun2026 15:54:32.879] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_screen_idle
+[17Jun2026 15:54:32.916] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_crush_attack_attack
+[17Jun2026 15:54:32.927] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_cannon_shoot
+[17Jun2026 15:54:32.929] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_cannon_break
+[17Jun2026 15:54:32.930] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_cannon_repair
+[17Jun2026 15:54:32.931] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_cannon_summon
+[17Jun2026 15:54:32.932] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_and_land
+[17Jun2026 15:54:32.945] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_with_crush
+[17Jun2026 15:54:32.960] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.3.7 Target: 47.4.10
+[17Jun2026 15:54:32.964] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [twilightforest] Starting version check at https://gh.tamaized.com/TeamTwilight/twilightforest/update.json
+[17Jun2026 15:54:32.971] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_crush_attack_full
+[17Jun2026 15:54:32.984] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_sword_forward
+[17Jun2026 15:54:33.005] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_carousel_slash_1
+[17Jun2026 15:54:33.028] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_giant_sword_attack
+[17Jun2026 15:54:33.052] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_single_earthquake_fire
+[17Jun2026 15:54:33.072] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_single_earthquake_ice
+[17Jun2026 15:54:33.082] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_summon_throw_side_stones
+[17Jun2026 15:54:33.098] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_jump_to_float
+[17Jun2026 15:54:33.116] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [twilightforest] Found status: AHEAD Current: 4.3.2508 Target: null
+[17Jun2026 15:54:33.120] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gravestone] Starting version check at https://update.maxhenkel.de/forge/gravestone
+[17Jun2026 15:54:33.124] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_float
+[17Jun2026 15:54:33.135] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_summon_fireballs
+[17Jun2026 15:54:33.147] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_crystal_summon
+[17Jun2026 15:54:33.148] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_summon_anim
+[17Jun2026 15:54:33.160] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_warrior_idle
+[17Jun2026 15:54:33.163] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_warrior_attack
+[17Jun2026 15:54:33.166] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_warrior_walk
+[17Jun2026 15:54:33.169] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_warrior_slam_earth
+[17Jun2026 15:54:33.172] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_warrior_die
+[17Jun2026 15:54:33.176] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_death
+[17Jun2026 15:54:33.189] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:geburah_stomp
+[17Jun2026 15:54:33.190] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:geburah_fire_all_cannons
+[17Jun2026 15:54:33.193] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:justice_hammer_smack
+[17Jun2026 15:54:33.196] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:geburah_tilt_left
+[17Jun2026 15:54:33.209] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:geburah_tilt_right
+[17Jun2026 15:54:33.210] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:judgement_bird_fly
+[17Jun2026 15:54:33.213] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:judgement_bird_cast
+[17Jun2026 15:54:33.215] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:geburah_bell_ring
+[17Jun2026 15:54:33.216] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:geburah_appear
+[17Jun2026 15:54:33.218] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_item_idle
+[17Jun2026 15:54:33.220] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:chesed_item_use
+[17Jun2026 15:54:33.221] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_fist_flying
+[17Jun2026 15:54:33.222] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:malkuth_fist_grab
+[17Jun2026 15:54:33.223] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:divine_gear_idle
+[17Jun2026 15:54:33.225] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:divine_gear_summon
+[17Jun2026 15:54:33.225] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:divine_gear_death
+[17Jun2026 15:54:33.226] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdbosses:divine_gear_item_idle
+[17Jun2026 15:54:33.228] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading animation: fdlib:testanim
+[17Jun2026 15:54:33.228] [main/INFO] [com.finderfeed.fdlib.FDLib/]: FD Animations loaded!
+[17Jun2026 15:54:33.229] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading FD models...
+[17Jun2026 15:54:33.231] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed
+[17Jun2026 15:54:33.266] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed
+[17Jun2026 15:54:33.272] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed
+[17Jun2026 15:54:33.282] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:electric_orb
+[17Jun2026 15:54:33.285] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed_crystal
+[17Jun2026 15:54:33.287] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed_monolith
+[17Jun2026 15:54:33.289] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed_kinetic_field
+[17Jun2026 15:54:33.292] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:boss_spawner
+[17Jun2026 15:54:33.295] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:boss_spawner
+[17Jun2026 15:54:33.299] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed_ray_reflector
+[17Jun2026 15:54:33.303] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:wip
+[17Jun2026 15:54:33.307] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth
+[17Jun2026 15:54:33.318] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_screen
+[17Jun2026 15:54:33.328] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_sword
+[17Jun2026 15:54:33.332] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_crush_attack
+[17Jun2026 15:54:33.343] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_cannon
+[17Jun2026 15:54:33.345] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_cannon_projectile
+[17Jun2026 15:54:33.348] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_earthquake_part
+[17Jun2026 15:54:33.349] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_boulder_ice
+[17Jun2026 15:54:33.351] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_boulder_fire
+[17Jun2026 15:54:33.353] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_platform
+[17Jun2026 15:54:33.354] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_repair_crystal
+[17Jun2026 15:54:33.355] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_boss_spawner
+[17Jun2026 15:54:33.360] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_warrior
+[17Jun2026 15:54:33.362] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:geburah
+[17Jun2026 15:54:33.367] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:geburah_no_core
+[17Jun2026 15:54:33.372] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:judgement_ball
+[17Jun2026 15:54:33.375] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:judgement_ball
+[17Jun2026 15:54:33.376] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:justice_hammer
+[17Jun2026 15:54:33.377] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:judgement_bird
+[17Jun2026 15:54:33.379] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:judgement_bird
+[17Jun2026 15:54:33.380] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:geburah_bell
+[17Jun2026 15:54:33.382] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:justitia
+[17Jun2026 15:54:33.385] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:chesed_item
+[17Jun2026 15:54:33.386] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_fist
+[17Jun2026 15:54:33.386] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_fist
+[17Jun2026 15:54:33.387] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:malkuth_fist_flying
+[17Jun2026 15:54:33.388] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdbosses:divine_gear
+[17Jun2026 15:54:33.392] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdlib:test
+[17Jun2026 15:54:33.395] [main/INFO] [com.finderfeed.fdlib.FDLib/]: Loading model: fdlib:test
+[17Jun2026 15:54:33.395] [main/INFO] [com.finderfeed.fdlib.FDLib/]: FD Models loaded!
+[17Jun2026 15:54:33.408] [main/WARN] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Mod 'fdlib' took 1.163 s to run a deferred task.
+[17Jun2026 15:54:33.532] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib server 1/2!
+[17Jun2026 15:54:33.534] [modloading-worker-0/INFO] [xaero.map.server.WorldMapServer/]: Loading Xaero's World Map - Stage 1/2 (Server)
+[17Jun2026 15:54:33.536] [modloading-worker-0/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 1/2 (Server)
+[17Jun2026 15:54:33.543] [main/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib common 2/2!
+[17Jun2026 15:54:33.544] [main/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib server 2/2!
+[17Jun2026 15:54:33.544] [main/INFO] [xaero.map.server.WorldMapServer/]: Loading Xaero's World Map - Stage 2/2 (Server)
+[17Jun2026 15:54:33.544] [main/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 2/2 (Server)
+[17Jun2026 15:54:33.648] [main/INFO] [citadel/]: adding citadel surface rules via terrablender...
+[17Jun2026 15:54:33.653] [main/INFO] [citadel/]: Added 0 vanilla biome surface rule types via terrablender
+[17Jun2026 15:54:33.657] [main/INFO] [citadel/]: Added 1 modded biome surface rule types via terrablender
+[17Jun2026 15:54:33.714] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gravestone] Found status: AHEAD Current: 1.20.1-1.0.35 Target: null
+[17Jun2026 15:54:33.734] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cumulus_menus] Starting version check at https://github.com/The-Aether-Team/Cumulus/raw/1.20.1-develop/update.json
+[17Jun2026 15:54:33.804] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cumulus_menus] Found status: UP_TO_DATE Current: 1.20.1-1.0.1-neoforge Target: null
+[17Jun2026 15:54:33.804] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_trek] Starting version check at https://api.modrinth.com/updates/h2jngREY/forge_updates.json
+[17Jun2026 15:54:33.869] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_trek] Found status: BETA Current: 1-B0.6 Target: B0.6.2+mod
